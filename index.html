@@ -583,6 +583,75 @@
             </div>
           </div>
 
+          <!-- Activity Table – Pace Travels -->
+          <div class="ongoing-section">
+            <h4>📊 Activity Predecessor &amp; Successor Table</h4>
+            <div class="table-responsive">
+              <table class="activity-table">
+                <thead>
+                  <tr>
+                    <th>Code</th>
+                    <th>Activity / Phase</th>
+                    <th>Predecessor</th>
+                    <th>Successor</th>
+                    <th>Duration</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="row-done">
+                    <td><span class="code-badge done-code">P1</span></td>
+                    <td>Requirements &amp; Planning</td>
+                    <td><span class="none-badge">— (Start)</span></td>
+                    <td><span class="code-badge">P2</span></td>
+                    <td>4 weeks</td>
+                    <td><span class="status-tag done-tag">✅ Done</span></td>
+                  </tr>
+                  <tr class="row-active">
+                    <td><span class="code-badge active-code">P2</span></td>
+                    <td>Design &amp; Architecture</td>
+                    <td><span class="code-badge">P1</span></td>
+                    <td><span class="code-badge">P3</span>, <span class="code-badge">P4</span></td>
+                    <td>3 weeks</td>
+                    <td><span class="status-tag inprog-tag">🔄 In Progress</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="code-badge">P3</span></td>
+                    <td>Frontend Development</td>
+                    <td><span class="code-badge">P2</span></td>
+                    <td><span class="code-badge">P5</span></td>
+                    <td>8 weeks</td>
+                    <td><span class="status-tag pend-tag">⏳ Pending</span></td>
+                  </tr>
+                  <tr class="row-critical">
+                    <td><span class="code-badge crit-code">P4</span></td>
+                    <td>Backend &amp; APIs <span class="crit-label">⚡ Critical</span></td>
+                    <td><span class="code-badge">P2</span></td>
+                    <td><span class="code-badge">P6</span></td>
+                    <td>10 weeks</td>
+                    <td><span class="status-tag pend-tag">⏳ Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="code-badge">P5</span></td>
+                    <td>Testing &amp; QA</td>
+                    <td><span class="code-badge">P3</span></td>
+                    <td><span class="code-badge">P6</span></td>
+                    <td>4 weeks</td>
+                    <td><span class="status-tag pend-tag">⏳ Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="code-badge">P6</span></td>
+                    <td>Deployment &amp; Launch</td>
+                    <td><span class="code-badge">P4</span>, <span class="code-badge">P5</span></td>
+                    <td><span class="none-badge">— (End)</span></td>
+                    <td>2 weeks</td>
+                    <td><span class="status-tag pend-tag">⏳ Pending</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
           <div class="ongoing-footer">
             <div class="eta-box">
               <span>🗓️ Estimated Completion</span>
@@ -857,6 +926,75 @@
                 <rect x="150" y="165" width="10" height="4" rx="2" fill="#94A3B8"/>
                 <text x="164" y="170" font-family="Inter,sans-serif" font-size="8" fill="#64748B">Pending</text>
               </svg>
+            </div>
+          </div>
+
+          <!-- Activity Table – Disaster Relief -->
+          <div class="ongoing-section">
+            <h4>📊 Activity Predecessor &amp; Successor Table</h4>
+            <div class="table-responsive">
+              <table class="activity-table">
+                <thead>
+                  <tr>
+                    <th>Code</th>
+                    <th>Activity / Phase</th>
+                    <th>Predecessor</th>
+                    <th>Successor</th>
+                    <th>Duration</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="row-active">
+                    <td><span class="code-badge active-code">D1</span></td>
+                    <td>Idea &amp; Requirements</td>
+                    <td><span class="none-badge">— (Start)</span></td>
+                    <td><span class="code-badge">D2</span></td>
+                    <td>3 weeks</td>
+                    <td><span class="status-tag inprog-tag">🔄 In Progress</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="code-badge">D2</span></td>
+                    <td>System Design</td>
+                    <td><span class="code-badge">D1</span></td>
+                    <td><span class="code-badge">D3</span></td>
+                    <td>3 weeks</td>
+                    <td><span class="status-tag pend-tag">⏳ Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="code-badge">D3</span></td>
+                    <td>Map &amp; SOS Module</td>
+                    <td><span class="code-badge">D2</span></td>
+                    <td><span class="code-badge">D4a</span>, <span class="code-badge">D4b</span></td>
+                    <td>6 weeks</td>
+                    <td><span class="status-tag pend-tag">⏳ Pending</span></td>
+                  </tr>
+                  <tr class="row-critical">
+                    <td><span class="code-badge crit-code">D4a</span></td>
+                    <td>Rescue Portal <span class="crit-label">⚡ Critical</span></td>
+                    <td><span class="code-badge">D3</span></td>
+                    <td><span class="code-badge">D5</span></td>
+                    <td>8 weeks</td>
+                    <td><span class="status-tag pend-tag">⏳ Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="code-badge">D4b</span></td>
+                    <td>Real-time Alerts</td>
+                    <td><span class="code-badge">D3</span></td>
+                    <td><span class="code-badge">D5</span></td>
+                    <td>4 weeks</td>
+                    <td><span class="status-tag pend-tag">⏳ Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="code-badge">D5</span></td>
+                    <td>Testing &amp; Launch</td>
+                    <td><span class="code-badge">D4a</span>, <span class="code-badge">D4b</span></td>
+                    <td><span class="none-badge">— (End)</span></td>
+                    <td>3 weeks</td>
+                    <td><span class="status-tag pend-tag">⏳ Pending</span></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
 

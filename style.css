@@ -366,7 +366,28 @@ code { font-family: 'Courier New', monospace; background: var(--surface2); paddi
   background: var(--surface2); border: 1px solid var(--border);
   border-radius: var(--radius-md); overflow-x: auto; padding: 12px 8px;
 }
-.aon-svg, .aoe-svg { width: 100%; min-width: 600px; height: auto; display: block; }
+/* ─────────── ACTIVITY TABLES ─────────── */
+.table-responsive { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); margin-top: 8px; }
+.activity-table { width: 100%; border-collapse: collapse; text-align: left; font-size: .88rem; min-width: 600px; }
+.activity-table th { background: var(--surface2); color: var(--text-1); font-weight: 700; padding: 12px 16px; border-bottom: 2px solid var(--border); font-size: .82rem; text-transform: uppercase; letter-spacing: .5px; }
+.activity-table td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--text-2); }
+.activity-table tbody tr:last-child td { border-bottom: none; }
+.activity-table tbody tr:hover { background: rgba(37,99,235,.03); }
+.activity-table tr.row-done { background: rgba(16,185,129,.02); }
+.activity-table tr.row-active { background: rgba(37,99,235,.04); }
+.activity-table tr.row-critical { background: rgba(245,158,11,.04); }
+
+.code-badge { display: inline-block; padding: 2px 8px; border-radius: 6px; font-weight: 700; font-family: 'Courier New', monospace; font-size: .82rem; background: var(--surface2); color: var(--text-2); border: 1px solid var(--border); }
+.code-badge.done-code { background: rgba(16,185,129,.1); color: #065F46; border-color: rgba(16,185,129,.3); }
+.code-badge.active-code { background: rgba(37,99,235,.1); color: var(--primary); border-color: rgba(37,99,235,.3); }
+.code-badge.crit-code { background: rgba(245,158,11,.15); color: #B45309; border-color: rgba(245,158,11,.3); }
+.none-badge { font-size: .8rem; color: var(--text-4); font-style: italic; }
+.crit-label { font-size: .72rem; font-weight: 700; color: #B45309; margin-left: 6px; }
+
+.status-tag { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: .75rem; font-weight: 700; }
+.status-tag.done-tag { background: rgba(16,185,129,.1); color: var(--success); }
+.status-tag.inprog-tag { background: rgba(37,99,235,.1); color: var(--primary); }
+.status-tag.pend-tag { background: rgba(100,116,139,.1); color: var(--text-3); }
 
 /* ─────────── FOOTER ─────────── */
 #site-footer { background: var(--text-1); color: rgba(255,255,255,.6); text-align: center; padding: 28px 24px; font-size: .87rem; }
